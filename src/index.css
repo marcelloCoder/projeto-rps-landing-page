@@ -1,0 +1,237 @@
+@import 'tailwindcss';
+
+@theme {
+  --font-sans: 'Outfit', ui-sans-serif, system-ui, sans-serif;
+  --color-ink: #090909;
+  --color-lime: #d6ff3a;
+  --color-paper: #f4f4f1;
+  --color-muted: #b9b9b4;
+  --color-card: #141414;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  background: var(--color-ink);
+  color: var(--color-paper);
+  font-family: var(--font-sans);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-lime);
+  outline-offset: 3px;
+}
+
+.proof-card {
+  background: linear-gradient(
+    110deg,
+    #9ed100 0%,
+    #d6ff3a 38%,
+    #f4ffb0 50%,
+    #d6ff3a 62%,
+    #8fc400 100%
+  );
+  background-size: 220% 100%;
+  color: #090909;
+  box-shadow: 0 0 28px rgb(214 255 58 / 35%);
+  animation:
+    proof-in 0.55s ease both,
+    proof-shine 2.6s ease-in-out 0.55s infinite alternate;
+}
+
+@keyframes proof-in {
+  from {
+    opacity: 0;
+    transform: translateY(14px) scale(0.96);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+@keyframes proof-shine {
+  from {
+    background-position: 0% 50%;
+  }
+
+  to {
+    background-position: 100% 50%;
+  }
+}
+
+.client-marquee {
+  overflow: hidden;
+  mask-image: linear-gradient(90deg, transparent, #000 7%, #000 93%, transparent);
+}
+
+.client-track {
+  display: flex;
+  width: max-content;
+  animation: client-scroll 46s linear infinite;
+}
+
+.client-marquee:hover .client-track,
+.client-marquee:focus-within .client-track {
+  animation-play-state: paused;
+}
+
+.client-group {
+  display: flex;
+  gap: 1rem;
+  padding-right: 1rem;
+}
+
+.client-card {
+  display: flex;
+  width: min(82vw, 22rem);
+  min-height: 15.5rem;
+  shrink: 0;
+  flex-direction: column;
+  justify-content: space-between;
+  gap: 1.5rem;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+}
+
+.client-card-lime {
+  background: linear-gradient(145deg, #f4ffb0 0%, #d6ff3a 46%, #9ed100 100%);
+  color: #090909;
+  box-shadow: 0 14px 36px rgb(214 255 58 / 28%);
+}
+
+.client-card-ink {
+  background: #141414;
+  color: #f4f4f1;
+  box-shadow:
+    0 0 0 1px rgb(214 255 58 / 60%),
+    0 14px 36px rgb(214 255 58 / 14%);
+}
+
+@keyframes client-scroll {
+  from {
+    transform: translateX(0);
+  }
+
+  to {
+    transform: translateX(-50%);
+  }
+}
+
+.hero-stage {
+  position: relative;
+  isolation: isolate;
+  overflow: hidden;
+  background: #090909;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+}
+
+.hero-glow {
+  position: absolute;
+  top: -18%;
+  right: -8%;
+  width: min(72vw, 46rem);
+  height: min(72vw, 46rem);
+  border-radius: 999px;
+  background: radial-gradient(circle, #f4ffb0 0%, #d6ff3a 34%, #7aaa00 58%, transparent 72%);
+  filter: blur(28px);
+  opacity: 0.72;
+  animation: hero-glow 7.5s ease-in-out infinite alternate;
+}
+
+.hero-sheen {
+  position: absolute;
+  inset: -30% -10%;
+  background: linear-gradient(
+    108deg,
+    transparent 36%,
+    rgb(214 255 58 / 28%) 48%,
+    transparent 60%
+  );
+  animation: hero-sheen 6.5s ease-in-out infinite;
+}
+
+.hero-scrim {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    180deg,
+    rgb(9 9 9 / 72%) 0%,
+    rgb(9 9 9 / 58%) 42%,
+    rgb(9 9 9 / 84%) 100%
+  );
+}
+
+@keyframes hero-glow {
+  from {
+    transform: translate3d(0, 0, 0) scale(1);
+  }
+
+  to {
+    transform: translate3d(-12%, 14%, 0) scale(1.18);
+  }
+}
+
+@keyframes hero-sheen {
+  from {
+    transform: translateX(-28%);
+  }
+
+  to {
+    transform: translateX(28%);
+  }
+}
+
+@media (min-width: 768px) {
+  .hero-scrim {
+    background: linear-gradient(
+      90deg,
+      rgb(9 9 9 / 90%) 0%,
+      rgb(9 9 9 / 68%) 46%,
+      rgb(9 9 9 / 22%) 100%
+    );
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  .client-marquee {
+    mask-image: none;
+    overflow-x: auto;
+  }
+
+  .client-track {
+    animation: none !important;
+    transform: none !important;
+  }
+
+  .client-track > ul[aria-hidden='true'] {
+    display: none;
+  }
+
+  .hero-glow,
+  .hero-sheen {
+    animation: none !important;
+  }
+}
