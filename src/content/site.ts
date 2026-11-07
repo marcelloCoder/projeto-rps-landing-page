@@ -39,19 +39,8 @@ export type Motorcycle = {
 }
 
 const post = (code: string) => `https://www.instagram.com/rpsautomotors/p/${code}/`
-const reel = (code: string) => `https://www.instagram.com/rpsautomotors/reel/${code}/`
 
 export const forSale: Motorcycle[] = [
-  {
-    id: 'xre-300-abs-2023',
-    name: 'Honda XRE 300 ABS 2023',
-    image: '/motos/a-venda/xre-300-abs-2023.jpg',
-    width: 1179,
-    height: 2096,
-    alt: 'Honda XRE 300 ABS 2023 à venda',
-    postUrl: reel('Derd2TdRXfu'),
-    fit: 'bottom',
-  },
   {
     id: 'bros-160-2019',
     name: 'Honda Bros 160 2019',
