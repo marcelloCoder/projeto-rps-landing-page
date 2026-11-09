@@ -25,7 +25,7 @@ export const nav = [
   { href: '#contato', label: 'Contato' },
 ]
 
-export const proofs = ['Revisada', 'Garantia', 'Até sem entrada', 'Cartão em até 36x']
+export const proofs = ['Revisada', 'Garantia', 'Até sem entrada', 'Cartão em até 24x']
 
 export type Motorcycle = {
   id: string
@@ -232,7 +232,7 @@ export const services = [
   },
   {
     title: 'Financiamento',
-    text: 'Simulação e financiamento até sem entrada. Cartão de crédito em até 36x.',
+    text: 'Simulação e financiamento até sem entrada. Cartão de crédito em até 24x.',
     href: whatsappHref(messages.finance),
     cta: 'Simular agora',
   },
@@ -258,7 +258,7 @@ export const differentials = [
   { title: 'Preço justo', text: 'O valor de cada anúncio está na própria foto publicada.' },
   { title: 'Com garantia', text: 'A promessa da loja é moto revisada, preço justo e garantia.' },
   { title: 'Compra facilitada', text: 'Quem quer vender a moto começa a conversa direto no WhatsApp.' },
-  { title: 'Cartão em até 36x', text: 'A bio da loja informa parcelamento no cartão de crédito.' },
+  { title: 'Cartão em até 24x', text: 'A bio da loja informa parcelamento no cartão de crédito.' },
   { title: 'Até sem entrada', text: 'Os anúncios dizem que a simulação pode ser feita até sem entrada.' },
 ]
 
@@ -315,7 +315,7 @@ export const faqs = [
   },
   {
     question: 'Parcelam no cartão?',
-    answer: 'Sim. A bio informa cartão de crédito em até 36x.',
+    answer: 'Sim. A bio informa cartão de crédito em até 24x.',
   },
   {
     question: 'Onde vocês ficam?',
