@@ -19,13 +19,13 @@ function PresentationVideo() {
           controls={started}
           playsInline
           preload="metadata"
-          poster="/videos/anuncio1-poster.jpg"
-          width={720}
-          height={1280}
+          poster="/videos/anuncio3-poster.jpg"
+          width={576}
+          height={1024}
           onPlay={() => setStarted(true)}
           aria-label="Vídeo de apresentação da RPS Auto Motors"
         >
-          <source src="/videos/anuncio1.mp4" type="video/mp4" />
+          <source src="/videos/anuncio3.mp4" type="video/mp4" />
         </video>
         {started ? null : (
           <button
