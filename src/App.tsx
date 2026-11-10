@@ -27,7 +27,7 @@ export default function App() {
           id="a-venda"
           eyebrow="Estoque publicado"
           title="Motos à venda"
-          text="Cada coluna é uma moto. Role a coluna para ver todas as fotos do modelo."
+          text="Cada anúncio mostra o modelo, o ano e o valor na própria foto."
           bikes={forSale}
           initialCount={6}
           mode="sale"

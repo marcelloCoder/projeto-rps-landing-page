@@ -57,11 +57,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda CG Titan 160 Original 2025 à venda',
     images: [
       { src: '/motos/a-venda/cg-titan-160-original-2025-21900/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-original-2025-21900/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-original-2025-21900/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-original-2025-21900/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/cg-titan-160-original-2025-21900/05.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-original-2025-21900/06.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -71,10 +66,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda CG Titan 160 Seta LED 2025 à venda',
     images: [
       { src: '/motos/a-venda/cg-titan-160-seta-led-2025-21900/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-seta-led-2025-21900/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/cg-titan-160-seta-led-2025-21900/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/cg-titan-160-seta-led-2025-21900/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/cg-titan-160-seta-led-2025-21900/05.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -84,10 +75,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Yamaha Fazer FZ25 2022 à venda',
     images: [
       { src: '/motos/a-venda/fazer-fz25-2022-21900/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz25-2022-21900/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz25-2022-21900/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz25-2022-21900/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/fazer-fz25-2022-21900/05.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -96,11 +83,7 @@ export const forSale: Motorcycle[] = [
     priceLabel: 'R$ 15.490,00',
     alt: 'Yamaha Fazer 150 2021 à venda',
     images: [
-      { src: '/motos/a-venda/fazer-150-2021-15490/01.jpg', width: 1280, height: 720 },
       { src: '/motos/a-venda/fazer-150-2021-15490/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-150-2021-15490/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-150-2021-15490/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/fazer-150-2021-15490/05.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -110,9 +93,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Yamaha Fazer FZ15 2023 à venda',
     images: [
       { src: '/motos/a-venda/fazer-fz15-2023-17490/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz15-2023-17490/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz15-2023-17490/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/fazer-fz15-2023-17490/04.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -122,10 +102,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda NXR Bros 2025 à venda',
     images: [
       { src: '/motos/a-venda/nxr-bros-2025-24990/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/nxr-bros-2025-24990/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/nxr-bros-2025-24990/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/nxr-bros-2025-24990/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/nxr-bros-2025-24990/05.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -135,10 +111,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda NXR Bros 2024 à venda',
     images: [
       { src: '/motos/a-venda/nxr-bros-2024-21900/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/nxr-bros-2024-21900/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/nxr-bros-2024-21900/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/nxr-bros-2024-21900/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/nxr-bros-2024-21900/05.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -148,10 +120,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda Sahara Rally 2025 à venda',
     images: [
       { src: '/motos/a-venda/sahara-rally-2025-35990/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/sahara-rally-2025-35990/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/sahara-rally-2025-35990/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/sahara-rally-2025-35990/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/sahara-rally-2025-35990/05.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -160,10 +128,7 @@ export const forSale: Motorcycle[] = [
     priceLabel: 'R$ 22.290,00',
     alt: 'Honda Start 160 Azul 2026 · 0 km à venda',
     images: [
-      { src: '/motos/a-venda/start-160-azul-2026-22290/01.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/start-160-azul-2026-22290/02.jpg', width: 1280, height: 720 },
       { src: '/motos/a-venda/start-160-azul-2026-22290/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-azul-2026-22290/04.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -173,10 +138,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda Start 160 Vermelha 2026 · 0 km à venda',
     images: [
       { src: '/motos/a-venda/start-160-vermelha-2026-22290/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-vermelha-2026-22290/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/start-160-vermelha-2026-22290/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-vermelha-2026-22290/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-vermelha-2026-22290/05.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -186,10 +147,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda Start 160 Preta 2026 · 336 km à venda',
     images: [
       { src: '/motos/a-venda/start-160-preta-2026-21900/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-preta-2026-21900/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/start-160-preta-2026-21900/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/start-160-preta-2026-21900/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/start-160-preta-2026-21900/05.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -198,10 +155,7 @@ export const forSale: Motorcycle[] = [
     priceLabel: 'R$ 23.990,00',
     alt: 'Honda XRE 190 2024 à venda',
     images: [
-      { src: '/motos/a-venda/xre-190-2024-23990/01.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xre-190-2024-23990/02.jpg', width: 1280, height: 720 },
       { src: '/motos/a-venda/xre-190-2024-23990/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/xre-190-2024-23990/04.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -211,11 +165,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Honda XRE 300 2023 à venda',
     images: [
       { src: '/motos/a-venda/xre-300-2023-31990/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/xre-300-2023-31990/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/xre-300-2023-31990/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xre-300-2023-31990/04.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xre-300-2023-31990/05.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xre-300-2023-31990/06.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -225,9 +174,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Yamaha XTZ Lander 250 Vermelha 2024 à venda',
     images: [
       { src: '/motos/a-venda/xtz-lander-250-vermelha-2024-27490/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/xtz-lander-250-vermelha-2024-27490/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xtz-lander-250-vermelha-2024-27490/03.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/xtz-lander-250-vermelha-2024-27490/04.jpg', width: 720, height: 1280 },
     ],
   },
   {
@@ -236,11 +182,7 @@ export const forSale: Motorcycle[] = [
     priceLabel: 'R$ 14.990,00',
     alt: 'Yamaha YBR Factor 2022 à venda',
     images: [
-      { src: '/motos/a-venda/ybr-factor-2022-14990/01.jpg', width: 1280, height: 720 },
       { src: '/motos/a-venda/ybr-factor-2022-14990/02.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2022-14990/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2022-14990/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2022-14990/05.jpg', width: 1280, height: 720 },
     ],
   },
   {
@@ -250,10 +192,6 @@ export const forSale: Motorcycle[] = [
     alt: 'Yamaha YBR Factor 2025 à venda',
     images: [
       { src: '/motos/a-venda/ybr-factor-2025-16990/01.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2025-16990/02.jpg', width: 1280, height: 720 },
-      { src: '/motos/a-venda/ybr-factor-2025-16990/03.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2025-16990/04.jpg', width: 720, height: 1280 },
-      { src: '/motos/a-venda/ybr-factor-2025-16990/05.jpg', width: 1280, height: 720 },
     ],
   },
   {
