@@ -27,7 +27,7 @@ export default function App() {
           id="a-venda"
           eyebrow="Estoque publicado"
           title="Motos à venda"
-          text="As fotos são os anúncios do Instagram. O preço que aparece é o que está na imagem."
+          text="Cada coluna é uma moto. Role a coluna para ver todas as fotos do modelo."
           bikes={forSale}
           initialCount={6}
           mode="sale"

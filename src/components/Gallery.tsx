@@ -23,23 +23,41 @@ export function Gallery({ id, eyebrow, title, text, bikes, initialCount, mode }:
         <p className="text-sm font-medium tracking-wide text-muted">{eyebrow}</p>
         <h2 className="mt-3 max-w-2xl text-3xl font-semibold tracking-tight md:text-4xl">{title}</h2>
         <p className="mt-4 max-w-2xl leading-relaxed text-muted">{text}</p>
-        <ul className="mt-10 grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-3">
-          {visible.map((bike, index) => (
+        <ul className="mt-10 grid grid-cols-1 items-start gap-6 sm:grid-cols-2 lg:grid-cols-3">
+          {visible.map((bike, bikeIndex) => (
             <li key={bike.id}>
-              <article className="flex h-full flex-col overflow-hidden rounded-2xl bg-card ring-1 ring-white/10">
-                <img
-                  src={bike.image}
-                  alt={bike.alt}
-                  width={bike.width}
-                  height={bike.height}
-                  loading={mode === 'sale' && index < 3 ? 'eager' : 'lazy'}
-                  fetchPriority={mode === 'sale' && index === 0 ? 'high' : undefined}
-                  decoding="async"
-                  className={`aspect-[4/5] w-full object-cover ${bike.fit === 'bottom' ? 'object-bottom' : 'object-center'}`}
-                />
-                <div className="flex flex-1 flex-col gap-4 p-4">
+              <article className="flex flex-col overflow-hidden rounded-2xl bg-card ring-1 ring-white/10">
+                <div className="flex flex-col gap-2 p-2">
+                  {bike.images.map((image, imageIndex) => (
+                    <img
+                      key={`${bike.id}-${image.src}`}
+                      src={image.src}
+                      alt={
+                        bike.images.length > 1
+                          ? `${bike.alt} — foto ${imageIndex + 1}`
+                          : bike.alt
+                      }
+                      width={image.width}
+                      height={image.height}
+                      loading={mode === 'sale' && bikeIndex < 2 && imageIndex === 0 ? 'eager' : 'lazy'}
+                      fetchPriority={
+                        mode === 'sale' && bikeIndex === 0 && imageIndex === 0 ? 'high' : undefined
+                      }
+                      decoding="async"
+                      className={`w-full rounded-xl object-cover ${
+                        image.width >= image.height ? 'aspect-video' : 'aspect-[4/5]'
+                      } ${bike.fit === 'bottom' ? 'object-bottom' : 'object-center'}`}
+                    />
+                  ))}
+                </div>
+                <div className="flex flex-col gap-4 p-4 pt-2">
                   <div className="flex items-start justify-between gap-3">
-                    <h3 className="text-lg font-semibold leading-snug">{bike.name}</h3>
+                    <div>
+                      <h3 className="text-lg font-semibold leading-snug">{bike.name}</h3>
+                      {bike.priceLabel ? (
+                        <p className="mt-1 text-sm font-semibold text-paper">{bike.priceLabel}</p>
+                      ) : null}
+                    </div>
                     <span
                       className={
                         mode === 'sale'
@@ -56,14 +74,16 @@ export function Gallery({ id, eyebrow, title, text, bikes, initialCount, mode }:
                         Quero esta moto
                       </a>
                     ) : null}
-                    <a
-                      className="inline-flex min-h-11 items-center text-sm font-medium underline decoration-white/30 underline-offset-4 hover:decoration-white"
-                      href={bike.postUrl}
-                      target="_blank"
-                      rel="noreferrer"
-                    >
-                      Ver post
-                    </a>
+                    {bike.postUrl ? (
+                      <a
+                        className="inline-flex min-h-11 items-center text-sm font-medium underline decoration-white/30 underline-offset-4 hover:decoration-white"
+                        href={bike.postUrl}
+                        target="_blank"
+                        rel="noreferrer"
+                      >
+                        Ver post
+                      </a>
+                    ) : null}
                   </div>
                 </div>
               </article>
