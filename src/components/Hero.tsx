@@ -72,7 +72,7 @@ export function Hero() {
             <p className="max-w-2xl text-lg leading-relaxed text-muted">
               Motos revisadas, preço justo e com garantia.
             </p>
-            <div className="flex flex-col gap-3 sm:flex-row">
+            <div className="order-2 flex flex-col gap-3 sm:flex-row md:order-none">
               <a className={primaryLink} href={whatsappHref(messages.hero)}>
                 Falar no WhatsApp
               </a>
