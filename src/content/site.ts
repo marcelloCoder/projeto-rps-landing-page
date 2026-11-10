@@ -6,13 +6,17 @@ export function whatsappHref(message: string) {
 
 export const messages = {
   general:
-    'Olá, vim pelo site da RPS Auto Motors e quero falar sobre compra, venda ou financiamento.',
-  hero: 'Olá, vim pelo site da RPS Auto Motors e quero falar no WhatsApp.',
-  buy: 'Olá, quero vender minha moto para a RPS Auto Motors.',
-  stock: 'Olá, quero ver as motos à venda na RPS Auto Motors.',
-  finance: 'Olá, quero simular um financiamento na RPS Auto Motors.',
-  contact: 'Olá, vim pelo site da RPS Auto Motors e quero mais informações.',
-  bike: (name: string) => `Olá, quero esta moto: ${name}.`,
+    'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito. Quero falar sobre compra, venda ou financiamento.',
+  hero: 'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito. Podem me atender no WhatsApp?',
+  buy: 'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito em vender minha moto. Podem me orientar?',
+  stock:
+    'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito nas motos à venda. Quero ver as condições.',
+  finance:
+    'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito no financiamento. Quero fazer uma simulação.',
+  contact:
+    'Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito. Quero mais informações sobre a loja.',
+  bike: (name: string) =>
+    `Olá, te encontrei pelo site da RPS Auto Motors e me interessei muito nesta moto: ${name}. Ainda está disponível?`,
 }
 
 export const instagramUrl = 'https://www.instagram.com/rpsautomotors/'
