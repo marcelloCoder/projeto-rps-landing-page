@@ -44,9 +44,13 @@ export function Gallery({ id, eyebrow, title, text, bikes, initialCount, mode }:
                         mode === 'sale' && bikeIndex === 0 && imageIndex === 0 ? 'high' : undefined
                       }
                       decoding="async"
-                      className={`w-full rounded-xl object-cover ${
-                        image.width >= image.height ? 'aspect-video' : 'aspect-[4/5]'
-                      } ${bike.fit === 'bottom' ? 'object-bottom' : 'object-center'}`}
+                      className={
+                        image.width >= image.height
+                          ? `w-full rounded-xl aspect-video object-cover ${
+                              bike.fit === 'bottom' ? 'object-bottom' : 'object-center'
+                            }`
+                          : 'h-auto w-full rounded-xl'
+                      }
                     />
                   ))}
                 </div>
